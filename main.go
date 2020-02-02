@@ -70,8 +70,8 @@ func (c *cli) run() int {
 	}
 	cmd := exec.Command(executable, mainfile.Name())
 	cmd.Stdin = os.Stdin
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
+	cmd.Stdout = c.stdout
+	cmd.Stderr = c.stderr
 	cmd.Dir = tmpDir
 	if err := cmd.Run(); err != nil {
 		fmt.Fprintln(c.stderr, err)
