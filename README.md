@@ -10,13 +10,12 @@ go get -u github.com/nakabonne/gotmp
 
 ## Usage
 
-Running gotmp creates a temporary directory and opens up main.go in `$EDITOR`.
+To run gotmp execute:
 
 ```
 gotmp
 ```
-
-It creates the following files underneath a temporary directory to be removed after work:
+Running gotmp creates a temporary directory to be removed after work and opens up main.go in `$EDITOR`. It creates the following files:
 
 ```
 .
